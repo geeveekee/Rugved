@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp --branchpatch=sdcomp-29491-629360
+"rugved_can\startup_stm32l432xx.o"
+"rugved_can\main.o"
+"rugved_can\stm32l4xx_it.o"
+"rugved_can\stm32l4xx_hal_msp.o"
+"rugved_can\stm32l4xx_hal_can.o"
+"rugved_can\stm32l4xx_hal.o"
+"rugved_can\stm32l4xx_hal_i2c.o"
+"rugved_can\stm32l4xx_hal_i2c_ex.o"
+"rugved_can\stm32l4xx_hal_rcc.o"
+"rugved_can\stm32l4xx_hal_rcc_ex.o"
+"rugved_can\stm32l4xx_hal_flash.o"
+"rugved_can\stm32l4xx_hal_flash_ex.o"
+"rugved_can\stm32l4xx_hal_flash_ramfunc.o"
+"rugved_can\stm32l4xx_hal_gpio.o"
+"rugved_can\stm32l4xx_hal_dma.o"
+"rugved_can\stm32l4xx_hal_dma_ex.o"
+"rugved_can\stm32l4xx_hal_pwr.o"
+"rugved_can\stm32l4xx_hal_pwr_ex.o"
+"rugved_can\stm32l4xx_hal_cortex.o"
+"rugved_can\stm32l4xx_hal_exti.o"
+"rugved_can\stm32l4xx_hal_tim.o"
+"rugved_can\stm32l4xx_hal_tim_ex.o"
+"rugved_can\system_stm32l4xx.o"
+--strict --scatter "Rugved_CAN\Rugved_CAN.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Rugved_CAN.map" -o Rugved_CAN\Rugved_CAN.axf
